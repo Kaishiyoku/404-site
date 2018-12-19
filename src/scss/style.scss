@@ -1,11 +1,13 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 body {
-  background: linear-gradient(to left,#000428 ,#004e92);
-  color: #f8f8f8;
-  display: flex;
-  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-h1 {
-  color: #f8f8f8;
-  font-family: helvetica;
+footer {
+  margin-top: 5rem;
+  font-size: $font-size-sm;
+  color: $text-muted;
+  text-align: right;
 }
