@@ -62,10 +62,16 @@
     </div>
 
     <footer>
-        Andreas Wiedel, <a href="https://andreas-wiedel.de">andreas-wiedel.de</a>
+        <span id="year"></span>, Andreas Wiedel, <a href="https://andreas-wiedel.de">andreas-wiedel.de</a>
     </footer>
 </div>
 
 </body>
+
+<script type="text/javascript">
+    var currentYear = new Date().getFullYear();
+
+    document.getElementById('year').innerHTML = currentYear;
+</script>
 
 </html>
