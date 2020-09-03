@@ -11,16 +11,22 @@
 
 <body>
 
-<div class="container mx-auto pt-10 pb-10">
-    <div class="flex pb-12 items-center">
-        <img src="img/undraw_empty_xct9.svg" alt="site not found" class="h-64 pr-10"/>
+<div class="bg-primary-light">
+    <div class="container mx-auto pt-10 pb-10">
+        <div class="flex items-center">
+            <div class="text-12xl mr-12">404</div>
 
-        <div class="flex-grow">
-            <h1 class="text-4xl">The requested site could not be found</h1>
+            <div class="flex-grow">
+                <h1 class="text-4xl">The requested site could not be found</h1>
 
-            <p class="text-xl font-light">We couldn't find what you were looking for.</p>
+                <p class="text-xl font-light">We couldn't find what you were looking for.</p>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="container mx-auto pb-10">
+    <div class="rounded mt-16 mb-16 border-b-8 border-primary-alternative w-1/12"></div>
 
     <p class="text-xl pb-5">As long as you're here; what about some music?</p>
 
@@ -29,7 +35,7 @@
             <p class="text-l font-light pb-1">Maybe an Anime theme song played on the piano?</p>
 
             <div class="embed-responsive aspect-ratio-16/9">
-                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/PSqV8G7Drkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <object class="embed-responsive-item" data="https://www.youtube-nocookie.com/embed/PSqV8G7Drkc"></object>
             </div>
         </div>
 
@@ -37,7 +43,7 @@
             <p class="text-l font-light pb-1">Or some hours of nice space ambient music?</p>
 
             <div class="embed-responsive aspect-ratio-16/9">
-                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/8wLwxmjrZj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <object class="embed-responsive-item" data="https://www.youtube-nocookie.com/embed/8wLwxmjrZj8"></object>
             </div>
         </div>
 
@@ -45,7 +51,7 @@
             <p class="text-l font-light pb-1">Or the X4: Foundations soundtrack?</p>
 
             <div class="embed-responsive aspect-ratio-16/9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Lmkq1dwLe5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <object class="embed-responsive-item" data="https://www.youtube.com/embed/Lmkq1dwLe5g"></object>
             </div>
         </div>
 
@@ -53,13 +59,13 @@
             <p class="text-l font-light pb-1">Or the Interstellar soundtrack?</p>
 
             <div class="embed-responsive aspect-ratio-16/9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vLGI81mDYTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <object class="embed-responsive-item" data='https://www.youtube.com/embed/vLGI81mDYTg'></object>
             </div>
         </div>
     </div>
 
     <footer class="pt-24 text-lg">
-        <span id="year"></span>, Andreas Wiedel, <a href="https://andreas-wiedel.de">andreas-wiedel.de</a>
+        <span id="year"></span>, Andreas Wiedel, <a class="text-primary border-primary-light border-b-2 hover:text-black hover:border-primary-alternative" href="https://andreas-wiedel.de">andreas-wiedel.de</a>
     </footer>
 </div>
 
