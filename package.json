@@ -17,6 +17,7 @@
     "sass": "^1.26.10",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.7.6",
-    "tailwindcss-responsive-embed": "^1.0.0"
+    "tailwindcss-responsive-embed": "^1.0.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }
