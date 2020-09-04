@@ -2,5 +2,7 @@
     "/dist/js/app.js": "/dist/js/app.js",
     "/dist/css/concourse.css": "/dist/css/concourse.css",
     "/dist/css/style.css": "/dist/css/style.css",
-    "/dist/index.html": "/dist/index.html"
+    "/dist/index.html": "/dist/index.html",
+    "/dist/index_secondary.html": "/dist/index_secondary.html",
+    "/dist/index_tertiary.html": "/dist/index_tertiary.html"
 }

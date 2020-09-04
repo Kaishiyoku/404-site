@@ -11,7 +11,9 @@ module.exports = {
         'primary-alternative': '#80658C',
         'primary-light': '#e2d7e4',
         secondary: '#91A663',
+        'secondary-light': '#e8f3cf',
         tertiary: '#8E4B6D',
+        'tertiary-light': '#f4d9e7',
       },
       fontFamily: {
         'sans': ['Concourse', 'sans-serif'],
