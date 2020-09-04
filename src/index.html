@@ -33,7 +33,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div class="rounded shadow-lg">
             <div class="embed-responsive aspect-ratio-16/9 rounded-t">
-                <object class="embed-responsive-item" data="https://www.youtube-nocookie.com/embed/PSqV8G7Drkc"></object>
+                <img class="embed-responsive-item cursor-pointer opacity-75 hover:opacity-100 transition-all duration-200" src="https://img.youtube.com/vi/PSqV8G7Drkc/0.jpg" alt="One more time, One more chance - 5 Centimeters Per Second" data-embed-url="https://www.youtube-nocookie.com/embed/PSqV8G7Drkc">
             </div>
 
             <p class="text-l font-light p-2">Maybe an Anime theme song played on the piano?</p>
@@ -41,7 +41,7 @@
 
         <div class="rounded shadow-lg">
             <div class="embed-responsive aspect-ratio-16/9 rounded-t">
-                <object class="embed-responsive-item" data="https://www.youtube-nocookie.com/embed/8wLwxmjrZj8"></object>
+                <img class="embed-responsive-item cursor-pointer opacity-75 hover:opacity-100 transition-all duration-200" src="https://img.youtube.com/vi/8wLwxmjrZj8/0.jpg" alt="Space Ambient Music { INTERSTELLAR SPACE JOURNEY }" data-embed-url="https://www.youtube-nocookie.com/embed/8wLwxmjrZj8">
             </div>
 
             <p class="text-l font-light p-2">Or some hours of nice space ambient music?</p>
@@ -49,7 +49,7 @@
 
         <div class="rounded shadow-lg">
             <div class="embed-responsive aspect-ratio-16/9 rounded-t">
-                <object class="embed-responsive-item" data="https://www.youtube.com/embed/Lmkq1dwLe5g"></object>
+                <img class="embed-responsive-item cursor-pointer opacity-75 hover:opacity-100 transition-all duration-200" src="https://img.youtube.com/vi/Lmkq1dwLe5g/0.jpg" alt="X4: Foundations (Original Soundtrack) | Full Album" data-embed-url="https://www.youtube-nocookie.com/embed/Lmkq1dwLe5g">
             </div>
 
             <p class="text-l font-light p-2">Or the X4: Foundations soundtrack?</p>
@@ -57,7 +57,7 @@
 
         <div class="rounded shadow-lg">
             <div class="embed-responsive aspect-ratio-16/9 rounded-t">
-                <object class="embed-responsive-item" data='https://www.youtube.com/embed/vLGI81mDYTg'></object>
+                <img class="embed-responsive-item cursor-pointer opacity-75 hover:opacity-100 transition-all duration-200" src="https://img.youtube.com/vi/vLGI81mDYTg/0.jpg" alt="Hans Zimmer - Interstellar Soundtrack (Best Selection Mix)" data-embed-url="https://www.youtube-nocookie.com/embed/vLGI81mDYTg">
             </div>
 
             <p class="text-l font-light p-2">Or the Interstellar soundtrack?</p>
@@ -65,7 +65,9 @@
     </div>
 
     <footer class="pt-24 text-lg text-gray-500">
-        <span id="year"></span>, Andreas Wiedel, <a class="transition-all duration-200 ease-in-out text-primary border-primary-light border-b-2 hover:text-black hover:border-primary-alternative" href="https://andreas-wiedel.de">andreas-wiedel.de</a>
+        <span id="year"></span>, Andreas Wiedel, <a
+            class="transition-all duration-200 ease-in-out text-primary border-primary-light border-b-2 hover:text-black hover:border-primary-alternative"
+            href="https://andreas-wiedel.de">andreas-wiedel.de</a>
     </footer>
 </div>
 
@@ -75,6 +77,14 @@
     var currentYear = new Date().getFullYear();
 
     document.getElementById('year').innerHTML = currentYear;
+
+    document.querySelectorAll('[data-embed-url]').forEach((embed) => {
+        embed.addEventListener('click', () => {
+            embed.parentElement.innerHTML = '<object class="embed-responsive-item" data="' + embed.getAttribute('data-embed-url') + '"></object>';
+        });
+    });
+
+    //<object class="embed-responsive-item" data="https://www.youtube-nocookie.com/embed/PSqV8G7Drkc"></object>
 </script>
 
 </html>
