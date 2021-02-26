@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -6,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        gray: colors.gray,
         primary: '#633F73',
         'primary-alternative': '#80658C',
         'primary-light': '#e2d7e4',
@@ -62,4 +65,4 @@ module.exports = {
     require("tailwindcss-responsive-embed"),
     require("tailwindcss-aspect-ratio"),
   ],
-}
+};
