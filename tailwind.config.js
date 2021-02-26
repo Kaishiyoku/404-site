@@ -16,6 +16,9 @@ module.exports = {
         'secondary-light': '#e8f3cf',
         tertiary: '#8E4B6D',
         'tertiary-light': '#f4d9e7',
+        quaternary: '#3f7366',
+        'quaternary-alternative': '#658c82',
+        'quaternary-light': '#d5e3e0',
       },
       fontFamily: {
         'sans': ['Concourse', 'sans-serif'],
