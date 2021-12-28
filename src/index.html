@@ -10,9 +10,9 @@
     <script src="js/app.js" defer></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="font-sans antialiased text-gray-800 dark:text-gray-400 bg-gray-100 dark:bg-gray-900">
 
-<div class="text-gray-900 bg-purple-100 min-h-screen md:min-h-fit">
+<div class="dark:text-gray-100 bg-purple-100 dark:bg-purple-900 min-h-screen md:min-h-fit">
     <div class="container px-4 lg:pt-10 lg:pb-10 pb-5 mx-auto">
         <div class="items-center lg:flex">
             <div class="mr-12 text-[10rem]">404</div>
@@ -26,13 +26,13 @@
     </div>
 </div>
 
-<div class="container px-4 pb-10 mx-auto text-gray-800">
-    <div class="hidden mt-16 mb-16 border-b-8 rounded border-purple-300 lg:w-1/12 md:block md:w-1/6"></div>
+<div class="container px-4 pb-10 mx-auto">
+    <div class="hidden mt-16 mb-16 border-b-8 rounded border-purple-300 dark:border-purple-500 lg:w-1/12 md:block md:w-1/6"></div>
 
     <p class="pt-5 md:pt-0 pb-5 text-xl">As long as you're here; what about some music?</p>
 
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
+        <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
                 <object data="https://www.youtube-nocookie.com/embed/_8CdAO8n7sw" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
@@ -42,7 +42,7 @@
             </p>
         </div>
 
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
+        <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
                 <object data="https://www.youtube-nocookie.com/embed/8wLwxmjrZj8" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
@@ -50,7 +50,7 @@
             <p class="p-4 font-light text-l">Or some hours of nice space ambient music?</p>
         </div>
 
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
+        <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
                 <object data="https://www.youtube-nocookie.com/embed/glUsOxar9og" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
@@ -58,7 +58,7 @@
             <p class="p-4 font-light text-l">Or the X4: Foundations soundtrack?</p>
         </div>
 
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
+        <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
                 <object data="https://www.youtube-nocookie.com/embed/ZH6JUqPX8iE" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
@@ -68,7 +68,8 @@
     </div>
 
     <footer class="pt-24 text-sm text-gray-500">
-        <span id="year"></span>, <a class="transition-all duration-200 ease-in-out border-b-2 text-purple-500 border-purple-200 hover:text-black hover:border-purple-300" href="https://andreas-wiedel.de">Andreas Wiedel</a>
+        <span id="year"></span>,
+        <a class="transition-all duration-200 ease-in-out border-b-2 text-purple-500 dark:text-purple-400 border-purple-200 dark:border-purple-800 hover:text-black dark:hover:text-gray-100 hover:border-purple-300 dark:hover:border-purple-600" href="https://andreas-wiedel.de">Andreas Wiedel</a>
     </footer>
 </div>
 
