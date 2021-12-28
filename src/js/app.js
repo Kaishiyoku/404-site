@@ -7,11 +7,3 @@ window.getFooterYear = (initialYear = null) => {
 
     return currentYear;
 };
-
-window.initEmbedVideos = () => {
-    document.querySelectorAll('[data-embed-url]').forEach((embed) => {
-        embed.addEventListener('click', () => {
-            embed.parentElement.innerHTML = '<object data="' + embed.getAttribute('data-embed-url') + '"></object>';
-        });
-    });
-};
