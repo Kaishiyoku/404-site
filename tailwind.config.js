@@ -4,13 +4,11 @@ const colors = require('tailwindcss/colors');
 module.exports = {
     content: [
         './src/**/*.html',
-        './src/**/*.js',
-        './src/**/*.jsx',
     ],
     theme: {
         extend: {},
         fontFamily: {
-            sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            sans: ['Figtree', ...defaultTheme.fontFamily.sans],
         },
     },
     plugins: [

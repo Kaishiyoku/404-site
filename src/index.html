@@ -3,22 +3,26 @@
 
 <head>
     <title>Site not found</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    <script src="js/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-sans antialiased text-gray-800 dark:text-gray-400 bg-gray-100 dark:bg-gray-900">
 
-<div class="dark:text-gray-100 bg-purple-100 dark:bg-purple-900 min-h-screen md:min-h-fit">
+<div class="dark:text-gray-100 bg-purple-200 dark:bg-purple-900 min-h-screen md:min-h-fit">
     <div class="container px-4 lg:pt-10 lg:pb-10 pb-5 mx-auto">
         <div class="items-center lg:flex">
-            <div class="mr-12 text-[8rem] sm:text-[10rem]">404</div>
+            <div class="mr-12 text-[10rem] sm:text-[14rem]">404</div>
 
             <div class="flex-grow">
-                <h1 class="text-5xl pb-4">The requested site could not be found</h1>
+                <h1 class="text-7xl pb-4">The requested site could not be found</h1>
 
                 <p class="text-xl font-light">We couldn’t find what you were looking for.</p>
             </div>
@@ -27,17 +31,16 @@
 </div>
 
 <div class="container px-4 pb-10 mx-auto">
-    <div class="hidden mt-16 mb-16 border-b-8 rounded border-purple-300 dark:border-purple-500 lg:w-1/12 md:block md:w-1/6"></div>
+    <div class="mt-16 mb-16 border-b-8 rounded border-purple-400 dark:border-purple-500 w-1/6 lg:w-1/12"></div>
 
     <p class="pt-5 md:pt-0 pb-5 text-xl">As long as you’re here; what about some music?</p>
 
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
-                <object data="https://www.youtube-nocookie.com/embed/_8CdAO8n7sw" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
+                <object data="https://www.youtube-nocookie.com/embed/8k0QPEQxr24" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
         </div>
-
         <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
                 <object data="https://www.youtube-nocookie.com/embed/FobS3w7QX-Y" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
@@ -52,7 +55,7 @@
 
         <div class="bg-white dark:bg-gray-800 rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden">
             <div class="aspect-w-16 aspect-h-9">
-                <object data="https://www.youtube-nocookie.com/embed/ZH6JUqPX8iE" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
+                <object data="https://www.youtube-nocookie.com/embed/ImFA7F571TA" class="transition-all duration-200 cursor-pointer embed-responsive-item"></object>
             </div>
         </div>
     </div>
@@ -66,6 +69,12 @@
 </body>
 
 <script type="text/javascript">
+    function getFooterYear(initialYear) {
+        const currentYear = new Date().getFullYear()
+
+        return initialYear < currentYear ? `${initialYear} - ${currentYear}` : currentYear;
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('year').innerHTML = window.getFooterYear(2020);
     })
